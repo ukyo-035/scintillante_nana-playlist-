@@ -1,4 +1,4 @@
-const API_URL = "YOUR_API_URL";
+const API_URL = "https://script.google.com/macros/s/AKfycbzqJPosBaZ107kC5b6RYQ1OSHE9LvyIVDHNjwQk4Uf8En7ZZtkKOh-icxj-QsVEBoZASQ/exec";
 
 let songs=[];
 let currentList=[];
