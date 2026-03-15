@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
 <meta charset="UTF-8">
-<title>scintillante_nana playlist</title>
+<title>scintillante nana playlist</title>
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
-<h1>scintillante_nana playlist</h1>
+
+<h1>scintillante nana playlist</h1>
+
 </header>
 
-<div class="container">
+<div class="layout">
 
-<nav class="sidebar">
+<nav>
+
 <h3>プレイリスト</h3>
-<ul id="playlistList"></ul>
+<ul id="playlistMenu"></ul>
 
 <h3>ユニット</h3>
-<ul id="unitList"></ul>
+<ul id="unitMenu"></ul>
 
 <h3>メンバー</h3>
-<ul id="memberList"></ul>
+<ul id="memberMenu"></ul>
 
-<h3>その他</h3>
-<ul>
-<li onclick="showAllSongs()">全曲</li>
-</ul>
 </nav>
 
 <main>
-<h2 id="listTitle">曲一覧</h2>
+
 <ul id="songList"></ul>
+
 </main>
 
 </div>
 
-<footer class="player">
+<footer>
 
 <button onclick="prevSong()">◀</button>
-<button onclick="togglePlay()">▶ / ❚❚</button>
+<button onclick="togglePlay()">▶</button>
 <button onclick="nextSong()">▶▶</button>
 
-<span id="nowPlaying">No song</span>
+<span id="nowPlaying"></span>
 
-<audio id="audioPlayer"></audio>
+<audio id="audio"></audio>
 
 </footer>
 
-<script src="app.js"></script>
+<script src="../config.js"></script>
+<script src="player.js"></script>
 
 </body>
 </html>
