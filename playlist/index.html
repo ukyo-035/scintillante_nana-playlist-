@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>scintillante_nana playlist</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+<h1>scintillante_nana playlist</h1>
+</header>
+
+<div class="container">
+
+<nav class="sidebar">
+<h3>プレイリスト</h3>
+<ul id="playlistList"></ul>
+
+<h3>ユニット</h3>
+<ul id="unitList"></ul>
+
+<h3>メンバー</h3>
+<ul id="memberList"></ul>
+
+<h3>その他</h3>
+<ul>
+<li onclick="showAllSongs()">全曲</li>
+</ul>
+</nav>
+
+<main>
+<h2 id="listTitle">曲一覧</h2>
+<ul id="songList"></ul>
+</main>
+
+</div>
+
+<footer class="player">
+
+<button onclick="prevSong()">◀</button>
+<button onclick="togglePlay()">▶ / ❚❚</button>
+<button onclick="nextSong()">▶▶</button>
+
+<span id="nowPlaying">No song</span>
+
+<audio id="audioPlayer"></audio>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
