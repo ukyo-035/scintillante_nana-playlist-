@@ -1,1 +1,50 @@
+<h2>nana登録</h2>
 
+URL<br>
+<input id="url"><br>
+
+title<br>
+<input id="title"><br>
+
+members (カンマ区切り)<br>
+<input id="members"><br>
+
+playlist<br>
+<input id="playlist"><br>
+
+unit<br>
+<input id="unit"><br>
+
+date<br>
+<input type="date" id="date"><br>
+
+audio URL<br>
+<input id="audio"><br>
+
+<button onclick="register()">登録</button>
+
+<script>
+
+const API="YOUR_POST_API";
+
+function register(){
+
+const data={
+title:title.value,
+members:members.value,
+playlist:playlist.value,
+unit:unit.value,
+date:date.value,
+audio:audio.value
+};
+
+fetch(API,{
+method:"POST",
+body:JSON.stringify(data)
+});
+
+alert("登録完了");
+
+}
+
+</script>
