@@ -1,1 +1,52 @@
+body{
+font-family:sans-serif;
+margin:0;
+background:#fff;
+color:#000;
+}
 
+header{
+padding:15px;
+border-bottom:2px solid black;
+}
+
+.container{
+display:flex;
+height:75vh;
+}
+
+.sidebar{
+width:250px;
+border-right:1px solid #000;
+padding:10px;
+overflow-y:auto;
+}
+
+main{
+flex:1;
+padding:10px;
+overflow-y:auto;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+padding:6px;
+cursor:pointer;
+}
+
+li:hover{
+background:#eee;
+}
+
+.player{
+position:fixed;
+bottom:0;
+width:100%;
+border-top:2px solid black;
+padding:10px;
+background:white;
+}
